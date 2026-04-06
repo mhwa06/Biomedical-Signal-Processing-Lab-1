@@ -274,6 +274,13 @@ Atrial source selection uses `select_aa_component.m`: among all sources with DF 
 
 **Figures**: `Figure 1.png`, `Figure 2.png`, `Figure 3.png`, `Figure 4.png`, `f1.png`, `f2.png`
 
+![Figure 1](Figure%201.png)
+![Figure 2](Figure%202.png)
+![Figure 3](Figure%203.png)
+![Figure 4](Figure%204.png)
+![f1](f1.png)
+![f2](f2.png)
+
 The 8-lead plot (`Figure 1.png`) clearly reveals the structure of the recording. The maternal QRS complexes are tall and regular in all leads. The fetal QRS complexes are visible as smaller, faster deflections superimposed on the maternal signal, most distinctly in leads Abd2 and Abd3. Lead Abd4 is visibly more contaminated: it exhibits strong baseline wandering and an elevated noise floor.
 
 The Welch PSD of lead Abd4 (`Figure 2.png`) shows:
@@ -291,6 +298,9 @@ After applying the three-stage filter chain, the time-domain signal (`Figure 3.p
 ### 5.2 AF Spectral Analysis and Classification
 
 **Figures**: `Fig 1 Part 12.png` (boxplots), `Fig 2 Part 12.png` (additional boxplots/classifier)
+
+![Fig 1 Part 12](Fig%201%20Part%2012.png)
+![Fig 2 Part 12](Fig%202%20Part%2012.png)
 
 **Result files**: `results_part12_af_spectral.mat`
 
@@ -335,6 +345,12 @@ All classification accuracies are near or below 56%, barely above the chance lev
 ### 5.3 Synthetic MRANC — Parameter Study
 
 **Figures**: `Synthetic ANC signals Fig 1.png`, `Synthetic Fig 2.png`, `Synthetic Fig 3.png`, `synthetic Fig 4.png`, `synthetic Fig 5.png`
+
+![Synthetic ANC signals Fig 1](Synthetic%20ANC%20signals%20Fig%201.png)
+![Synthetic Fig 2](Synthetic%20Fig%202.png)
+![Synthetic Fig 3](Synthetic%20Fig%203.png)
+![synthetic Fig 4](synthetic%20Fig%204.png)
+![synthetic Fig 5](synthetic%20Fig%205.png)
 
 **Result files**: `results_part21_synthetic_mranc.mat`
 
@@ -391,6 +407,10 @@ The Welch PSD comparison in the 0–50 Hz band confirms:
 
 **Figures**: `fig1 pt23.png`, `fig 2 pt23.png`, `fig 3 pt 23.png`
 
+![fig1 pt23](fig1%20pt23.png)
+![fig 2 pt23](fig%202%20pt23.png)
+![fig 3 pt 23](fig%203%20pt%2023.png)
+
 **Result files**: `results_part23_af_single_mranc.mat`
 
 For patient 1, MRANC with V1 as primary input and V2–V6 as references converges at approximately **sample 500** (2.0 seconds at 250 Hz). The spectral metrics on the steady-state output are:
@@ -411,6 +431,9 @@ The DF values are identical, confirming that MRANC and STC agree on the dominant
 ### 5.6 Atrial Activity — Full Database (MRANC)
 
 **Figures**: `fig 1 pt24.png` (boxplots DF), `fig 2 pt24.png` (boxplots SC)
+
+![fig 1 pt24](fig%201%20pt24.png)
+![fig 2 pt24](fig%202%20pt24.png)
 
 **Result files**: `results_part24_af_full_mranc.mat`
 
@@ -435,6 +458,9 @@ The MRANC DF does show a slight trend: the recurrence group has a lower median D
 
 **Figures**: `fig 1 pt31.png`, `fig 2 pt31.png`
 
+![fig 1 pt31](fig%201%20pt31.png)
+![fig 2 pt31](fig%202%20pt31.png)
+
 **Result files**: `results_part31_synthetic_bss.mat`
 
 The maximum absolute Pearson correlation between the estimated sources and the ground-truth desired signal is:
@@ -454,6 +480,13 @@ In both scenarios, FastICA achieves near-perfect source recovery (correlation �
 
 **Figures**: `pt32 fig1.png` through `pt32 fig6.png`
 
+![pt32 fig1](pt32%20fig1.png)
+![pt32 fig2](pt32%20fig2.png)
+![pt32 fig3](pt32%20fig3.png)
+![pt32 fig4](pt32%20fig4.png)
+![pt32 fig5](pt32%20fig5.png)
+![pt32 fig6](pt32%20fig6.png)
+
 **Result files**: `results_part32_fecg_bss.mat`
 
 PCA and ICA are applied to the full 8-channel pregnancy ECG. The automated fetal-source selection identifies:
@@ -472,6 +505,13 @@ PCA and ICA are applied to the full 8-channel pregnancy ECG. The automated fetal
 ### 5.9 Atrial Activity — Single Patient (BSS)
 
 **Figures**: `pt33 fig1.png` through `pt33 fig6.png`
+
+![pt33 fig1](pt33%20fig1.png)
+![pt33 fig2](pt33%20fig2.png)
+![pt33 fig3](pt33%20fig3.png)
+![pt33 fig4](pt33%20fig4.png)
+![pt33 fig5](pt33%20fig5.png)
+![pt33 fig6](pt33%20fig6.png)
 
 **Result files**: `results_part33_af_single_bss.mat`
 
@@ -502,6 +542,9 @@ All four methods agree on a DF near 7.08 Hz for patient 1. The SC ordering is: S
 ### 5.10 Atrial Activity — Full Database (BSS)
 
 **Figures**: `pt34 fig1.png` (DF boxplots), `pt34 fig2.png` (SC boxplots)
+
+![pt34 fig1](pt34%20fig1.png)
+![pt34 fig2](pt34%20fig2.png)
 
 **Result files**: `results_part34_af_full_bss.mat`
 
